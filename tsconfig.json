@@ -12,8 +12,8 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "ngx-loading": [
-        "dist/ngx-loading"
+      "ngx-ui-loading": [
+        "dist/ngx-ui-loading"
       ]
     },
     "declaration": false,

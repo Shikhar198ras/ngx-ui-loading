@@ -1,13 +1,13 @@
 import { Component, Input, OnInit, TemplateRef } from '@angular/core';
-import { NgxLoadingService } from './ngx-loading.service';
+import { NgxUILoadingService } from './ngx-ui-loading.service';
 import {
-  INgxLoadingConfig,
-  ngxLoadingAnimationTypes,
-  NgxLoadingConfig,
-} from './ngx-loading-config';
+  INgxUILoadingConfig,
+  ngxUILoadingAnimationTypes,
+  NgxUILoadingConfig,
+} from './ngx-ui-loading-config';
 
 @Component({
-  selector: 'ngx-loading',
+  selector: 'ngx-ui-loading',
   template: `
     <div *ngIf="show">
       <div
@@ -1028,13 +1028,13 @@ import {
     `,
   ],
 })
-export class NgxLoadingComponent implements OnInit {
+export class NgxUILoadingComponent implements OnInit {
   @Input() show = false;
-  @Input() config: INgxLoadingConfig = new NgxLoadingConfig();
+  @Input() config: INgxUILoadingConfig = new NgxUILoadingConfig();
   @Input()
   template!: TemplateRef<any>;
-  private defaultConfig: INgxLoadingConfig = {
-    animationType: ngxLoadingAnimationTypes.threeBounce,
+  private defaultConfig: INgxUILoadingConfig = {
+    animationType: ngxUILoadingAnimationTypes.threeBounce,
     backdropBackgroundColour: 'rgba(0, 0, 0, 0.3)',
     backdropBorderRadius: '0px',
     fullScreenBackdrop: false,
@@ -1042,9 +1042,9 @@ export class NgxLoadingComponent implements OnInit {
     secondaryColour: '#ffffff',
     tertiaryColour: '#ffffff',
   };
-  public ngxLoadingAnimationTypes = ngxLoadingAnimationTypes;
+  public ngxLoadingAnimationTypes = ngxUILoadingAnimationTypes;
 
-  constructor(private LoadingService: NgxLoadingService) {}
+  constructor(private LoadingService: NgxUILoadingService) {}
 
   ngOnInit() {
     this.setupConfig();
