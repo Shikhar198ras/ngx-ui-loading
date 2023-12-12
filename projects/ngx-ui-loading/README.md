@@ -24,12 +24,6 @@ Install ngx-ui-loading via NPM, using the command below.
 npm install --save ngx-ui-loading
 ```
 
-NOTE: Version 15 of this package requires Angular 15 as a dependency. If you are using an older version of Angular, please install the relevant version e.g. 2.0.1 for Angular 2:
-
-```shell
-npm install --save ngx-ui-loading@2.0.1
-```
-
 ## Getting started
 
 Import the `NgxUILoadingModule` in your root application module:
