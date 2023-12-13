@@ -5,3 +5,4 @@
 export * from './lib/ngx-ui-loading.service';
 export * from './lib/ngx-ui-loading.component';
 export * from './lib/ngx-ui-loading.module';
+export * from './lib/ngx-ui-loading-config';
